@@ -13,24 +13,24 @@ screen_height = 680
 screen = pygame.display.set_mode((screen_width,screen_height)) # This creates the screen and gives it the width and height specified as a 2 item sequence.
 
 # play music
-game_sound = pygame.mixer.Sound('retro-run.wav')
+game_sound = pygame.mixer.Sound('assets/retro-run.wav')
 game_sound.play(-1)
 
 
 # Create the player, enemy, prize objects and give them appropriate pictures
 
-background = pygame.image.load("background.jpg")
-player = pygame.image.load("player.png")
-enemy1 = pygame.image.load("monster1.png")
-enemy2 = pygame.image.load("monster2.png")
-enemy3 = pygame.image.load("monster3.png")
-fire1 = pygame.image.load("fire.png")
-fire2 = pygame.image.load("fire.png")
-fire3 = pygame.image.load("fire.png")
-prize  = pygame.image.load("prize.png")
-win    = pygame.image.load("win.png")
-lose   = pygame.image.load("lose.png")
-losef   = pygame.image.load("losef.png")
+background = pygame.image.load("assets/background.jpg")
+player = pygame.image.load("assets/player.png")
+enemy1 = pygame.image.load("assets/monster1.png")
+enemy2 = pygame.image.load("assets/monster2.png")
+enemy3 = pygame.image.load("assets/monster3.png")
+fire1 = pygame.image.load("assets/fire.png")
+fire2 = pygame.image.load("assets/fire.png")
+fire3 = pygame.image.load("assets/fire.png")
+prize  = pygame.image.load("assets/prize.png")
+win    = pygame.image.load("assets/win.png")
+lose   = pygame.image.load("assets/lose.png")
+losef   = pygame.image.load("assets/losef.png")
 
 # Get the width and height of the images in order to do boundary detection 
 
@@ -226,7 +226,7 @@ while 1: # This is a looping structure that will loop the indented code until yo
         
         print("You lose!")
         game_sound.stop()
-        lose_sound = pygame.mixer.Sound('lose.wav')
+        lose_sound = pygame.mixer.Sound('assets/lose.wav')
         lose_sound.play()
         screen.blit(lose, (loseXPosition, loseYPosition))
         pygame.display.flip()
@@ -245,7 +245,7 @@ while 1: # This is a looping structure that will loop the indented code until yo
         
         print("You lose!")
         game_sound.stop()
-        lose_sound = pygame.mixer.Sound('lose.wav')
+        lose_sound = pygame.mixer.Sound('assets/lose.wav')
         lose_sound.play()
         screen.blit(losef, (losefXPosition, losefYPosition))
         pygame.display.flip()
@@ -266,7 +266,7 @@ while 1: # This is a looping structure that will loop the indented code until yo
         
         print("You win!")
         game_sound.stop()
-        win_sound = pygame.mixer.Sound('win.wav')
+        win_sound = pygame.mixer.Sound('assets/win.wav')
         win_sound.play()
 
         screen.blit(win, (winXPosition, winYPosition))
@@ -285,9 +285,9 @@ while 1: # This is a looping structure that will loop the indented code until yo
     if playerBox.colliderect(prizeBox):
         print("You win!")
         game_sound.stop()
-        prize_sound = pygame.mixer.Sound('retro-casino.wav')
+        prize_sound = pygame.mixer.Sound('assets/retro-casino.wav')
         prize_sound.play()
-        win_sound = pygame.mixer.Sound('win.wav')
+        win_sound = pygame.mixer.Sound('assets/win.wav')
         win_sound.play()
 
         screen.blit(win, (winXPosition, winYPosition))
