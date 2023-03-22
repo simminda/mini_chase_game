@@ -5,4 +5,4 @@ Avoid the bad guys and the fireballs. Use Up, Down, Left, Right keys to navigate
 
 Requires minimum resolution of 1040x680 to run
 
-![game screenshot](https://github.com/simminda/mini_chase_game/tree/master/assets/screenshot.jpg?raw=true)
+![game screenshot](https://github.com/simminda/mini_chase_game/tree/master/assets/screenshot.JPG?raw=true)
